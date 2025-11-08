@@ -1,2 +1,398 @@
 <!DOCTYPE html>
-<html><head><title>My Portfolio</title></head><body><h1>Hello, I'm <your name></h1></body></html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balasubramaniyan | Portfolio</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background: #f5f6fa;
+        color: #333;
+      }
+
+      .container {
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        margin: 0 auto;
+        background: #fff;
+        overflow: hidden;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      /* LEFT PROFILE PANEL */
+      .left-card {
+        width: 320px;
+        background: linear-gradient(180deg, #4285f4, #5a9bf9);
+        padding: 40px 25px;
+        text-align: center;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      .left-card img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        border: 5px solid rgba(255, 255, 255, 0.8);
+        margin-bottom: 20px;
+        object-fit: cover;
+      }
+
+      .left-card h2 {
+        font-size: 22px;
+        margin-bottom: 8px;
+      }
+
+      .left-card p {
+        font-size: 14px;
+        opacity: 0.9;
+        margin-bottom: 20px;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+        font-size: 14px;
+        opacity: 0.9;
+        justify-content: flex-start;
+      }
+
+      .contact-item i {
+        margin-right: 10px;
+      }
+
+      /* RIGHT CONTENT */
+      .right-content {
+        flex: 1;
+        padding: 40px 50px;
+        position: relative;
+        overflow-y: auto;
+      }
+
+      .resume-btn {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        background: #4285f4;
+        color: #fff;
+        font-weight: 600;
+        padding: 10px 18px;
+        border-radius: 25px;
+        box-shadow: 0 4px 10px rgba(66, 133, 244, 0.3);
+        text-decoration: none;
+        transition: 0.3s;
+      }
+
+      .resume-btn:hover {
+        background: #357ae8;
+        transform: scale(1.05);
+      }
+
+      .section {
+        margin-bottom: 50px;
+      }
+
+      .section .header h1 {
+        font-size: 26px;
+        margin-bottom: 15px;
+        color: #4285f4;
+      }
+
+      h3 {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      /* CARD GRID */
+      .card-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .card {
+        background: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        flex: 1 1 calc(50% - 20px);
+        min-width: 280px;
+        transition: 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 5px 15px rgba(66, 133, 244, 0.2);
+      }
+
+      .card-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .card-header i {
+        color: #4285f4;
+        margin-right: 10px;
+      }
+
+      .card-header h4 {
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .card small {
+        display: block;
+        color: #666;
+        margin-bottom: 5px;
+      }
+
+      .skills-batch {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .skills-batch span {
+        background: #e8f0fe;
+        color: #4285f4;
+        border-radius: 25px;
+        padding: 5px 12px;
+        font-size: 13px;
+        font-weight: 600;
+      }
+
+      @media (max-width: 900px) {
+        .container {
+          flex-direction: column;
+          height: auto;
+        }
+        .left-card {
+          width: 100%;
+          padding: 30px;
+        }
+        .right-content {
+          padding: 20px;
+        }
+        .card {
+          flex: 1 1 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- LEFT PROFILE PANEL -->
+      <div class="left-card">
+        <img src=./photo.jpg" alt="Profile Photo" />
+        <h2>Balasubramaniyan</h2>
+        <p>Full Stack Developer (Java & Web Technologies)</p>
+
+        <div class="contact-item">
+          <i class="material-icons">email</i>
+          <span>abithabala@gmail.com</span>
+        </div>
+        <div class="contact-item">
+          <i class="material-icons">phone</i>
+          <span>+91 86084 98598</span>
+        </div>
+        <div class="contact-item">
+          <i class="material-icons">linkedin</i>
+          <span>linkedin.com/in/balasubramaniyan</span>
+        </div>
+        <div class="contact-item">
+          <i class="material-icons">code</i>
+          <span>https://github.com/abithabala/</span>
+        </div>
+      </div>
+
+      <!-- RIGHT CONTENT -->
+      <div class="right-content">
+        <a href="./resume.pdf" download class="resume-btn">Download Resume</a>
+
+        <!-- About -->
+        <div id="about" class="section">
+          <div class="header"><h1>About Me</h1></div>
+          <p>
+            Passionate full stack developer specializing in
+            <strong>Java</strong> and modern <strong>web technologies</strong>.
+            Experienced in creating scalable and responsive applications using
+            <strong>Spring Boot</strong>, <strong>React</strong>, and databases
+            like <strong>MySQL</strong> and <strong>Neo4j</strong>. Experienced
+            in networking and enterprise-level solutions including
+            <strong>FCAPS</strong> and <strong>SNMP</strong>.
+          </p>
+        </div>
+
+        <!-- Skills -->
+        <div id="skills" class="section">
+          <div class="header"><h1>Skills</h1></div>
+          <div class="card-grid" id="skills-container"></div>
+        </div>
+
+        <!-- Experience -->
+        <div id="experience" class="section">
+          <div class="header"><h1>Experience</h1></div>
+          <div class="card-grid" id="experience-container"></div>
+        </div>
+
+        <!-- Education -->
+        <div id="education" class="section">
+          <div class="header"><h1>Educational Qualification</h1></div>
+          <div class="card-grid" id="education-container"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // ---------- Skills ----------
+      const skills = {
+        Frontend: [
+          "HTML",
+          "CSS",
+          "JavaScript (ES6+)",
+          "TypeScript",
+          "React.js",
+          "Bootstrap",
+          "jQuery",
+        ],
+
+        Backend: [
+          "Java",
+          "Spring Boot",
+          "Spring MVC",
+          "Node.js",
+          "Express.js",
+          "RESTful APIs",
+          "Microservices",
+          "GraphQL",
+        ],
+
+        Database: ["MySQL", "Neo4j"],
+
+        Tools: [
+          "Git",
+          "Docker",
+          "Postman",
+          "VS Code",
+          "Redmine",
+          "IntelliJ IDEA",
+          "Eclipse",
+        ],
+
+        Networking: ["TCP/IP", "HTTP/HTTPS", "WebSockets", "SNMP", "FCAPS"],
+      };
+
+      const skillsContainer = document.getElementById("skills-container");
+
+      Object.keys(skills).forEach((category) => {
+        const card = document.createElement("div");
+        card.className = "card";
+
+        const header = document.createElement("div");
+        header.className = "card-header";
+        header.innerHTML = `<i class="material-icons">build</i><h4>${category}</h4>`;
+
+        const batch = document.createElement("div");
+        batch.className = "skills-batch";
+        skills[category].forEach((skill) => {
+          const span = document.createElement("span");
+          span.textContent = skill;
+          batch.appendChild(span);
+        });
+
+        card.appendChild(header);
+        card.appendChild(batch);
+        skillsContainer.appendChild(card);
+      });
+
+      // ---------- Experience ----------
+      const experiences = [
+        {
+          role: "Full Stack Developer",
+          company: "XYZ Solutions",
+          period: "2022 – Present",
+          desc: "Developing scalable web apps using Spring Boot and React with RESTful APIs.",
+        },
+        {
+          role: "Frontend Developer",
+          company: "ABC Technologies",
+          period: "2020 – 2022",
+          desc: "Built responsive interfaces using React and Angular frameworks.",
+        },
+      ];
+
+      const expContainer = document.getElementById("experience-container");
+
+      experiences.forEach((exp) => {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.innerHTML = `
+          <div class="card-header">
+            <i class="material-icons">work</i>
+            <h4>${exp.role}</h4>
+          </div>
+          <small>${exp.company} | ${exp.period}</small>
+          <p>${exp.desc}</p>
+        `;
+        expContainer.appendChild(card);
+      });
+
+      // ---------- Education ----------
+      const education = [
+        {
+          degree: "B.Tech in Computer Science",
+          institution: "ABC University",
+          period: "2016 – 2020",
+          desc: "Graduated with distinction, focusing on software development and networking.",
+        },
+        {
+          degree: "Higher Secondary Education",
+          institution: "XYZ Matriculation School",
+          period: "2014 – 2016",
+          desc: "Specialized in Computer Science with Mathematics.",
+        },
+      ];
+
+      const eduContainer = document.getElementById("education-container");
+
+      education.forEach((edu) => {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.innerHTML = `
+          <div class="card-header">
+            <i class="material-icons">school</i>
+            <h4>${edu.degree}</h4>
+          </div>
+          <small>${edu.institution} | ${edu.period}</small>
+          <p>${edu.desc}</p>
+        `;
+        eduContainer.appendChild(card);
+      });
+    </script>
+  </body>
+</html>
