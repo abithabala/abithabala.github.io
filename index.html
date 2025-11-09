@@ -39,7 +39,7 @@
 
       /* LEFT PROFILE PANEL */
       .left-card {
-        width: 320px;
+        width: 420px;
         background: linear-gradient(180deg, #4285f4, #5a9bf9);
         padding: 40px 25px;
         text-align: center;
@@ -60,12 +60,12 @@
       }
 
       .left-card h2 {
-        font-size: 22px;
+        font-size: 40px;
         margin-bottom: 8px;
       }
 
       .left-card p {
-        font-size: 14px;
+        font-size: 24px;
         opacity: 0.9;
         margin-bottom: 20px;
       }
@@ -74,9 +74,14 @@
         display: flex;
         align-items: center;
         margin: 10px 0;
-        font-size: 14px;
+        font-size: 20px;
         opacity: 0.9;
         justify-content: flex-start;
+        align-self: flex-start;
+      }
+
+      .contact-item a:visited {
+        color: unset;
       }
 
       .contact-item i {
@@ -201,6 +206,25 @@
           flex: 1 1 100%;
         }
       }
+
+      strong {
+        background-color: #e8f0fe;
+        padding: 0px 10px;
+        margin: 5px;
+        border-radius: 10px;
+      }
+
+      strong.exp {
+        padding: 0px 10px;
+        border-radius: 5px;
+        background: #e8f0fe;
+        color: #4285f4;
+      }
+
+      p {
+        text-align: justify;
+        line-height: 30px;
+      }
     </style>
   </head>
 
@@ -208,9 +232,16 @@
     <div class="container">
       <!-- LEFT PROFILE PANEL -->
       <div class="left-card">
-        <img src=./photo.jpg" alt="Profile Photo" />
+        <img
+          width="100px"
+          height="100px"
+          src="img/photo.jpg"
+          alt="Profile Photo"
+        />
         <h2>Balasubramaniyan</h2>
-        <p>Full Stack Developer (Java & Web Technologies)</p>
+        <p style="text-align: center">
+          Full Stack Developer <br />(Java & Web Technologies)
+        </p>
 
         <div class="contact-item">
           <i class="material-icons">email</i>
@@ -221,12 +252,12 @@
           <span>+91 86084 98598</span>
         </div>
         <div class="contact-item">
-          <i class="material-icons">linkedin</i>
-          <span>linkedin.com/in/balasubramaniyan</span>
-        </div>
-        <div class="contact-item">
           <i class="material-icons">code</i>
-          <span>https://github.com/abithabala/</span>
+          <span
+            ><a href="https://github.com/abithabala/"
+              >https://github.com/abithabala/</a
+            ></span
+          >
         </div>
       </div>
 
@@ -238,7 +269,8 @@
         <div id="about" class="section">
           <div class="header"><h1>About Me</h1></div>
           <p>
-            Passionate full stack developer specializing in
+            Passionate full stack developer with
+            <strong class="exp">10 years</strong> of experience specializing in
             <strong>Java</strong> and modern <strong>web technologies</strong>.
             Experienced in creating scalable and responsive applications using
             <strong>Spring Boot</strong>, <strong>React</strong>, and databases
@@ -292,7 +324,7 @@
           "GraphQL",
         ],
 
-        Database: ["MySQL", "Neo4j"],
+        "Database & Storage": ["MySQL", "Neo4j ( Graph DB)", "Apache Hadoop"],
 
         Tools: [
           "Git",
@@ -302,9 +334,22 @@
           "Redmine",
           "IntelliJ IDEA",
           "Eclipse",
+          "Gimp",
         ],
 
-        Networking: ["TCP/IP", "HTTP/HTTPS", "WebSockets", "SNMP", "FCAPS"],
+        Networking: [
+          "TCP/IP",
+          "HTTP/HTTPS",
+          "WebSockets",
+          "SNMP",
+          "FCAPS",
+          "FTP",
+          "Network Devices",
+        ],
+
+        Monitoring: ["Grafana", "Prometheus", "Ganglia", "MRTG"],
+        WebServers: ["Apache Tomcat", "Apache HTTPD"],
+        OperatingSystems: ["Windows", "Linux ( Redhat )", "Linux ( Ubuntu )"],
       };
 
       const skillsContainer = document.getElementById("skills-container");
@@ -334,15 +379,15 @@
       const experiences = [
         {
           role: "Full Stack Developer",
-          company: "XYZ Solutions",
-          period: "2022 – Present",
-          desc: "Developing scalable web apps using Spring Boot and React with RESTful APIs.",
+          company: "NMS Software",
+          period: "2015 – Present",
+          desc: "Full-stack development of scalable web apps with Spring Boot and Web Technologies, featuring RESTful API architecture and NMS FCAPS ",
         },
         {
-          role: "Frontend Developer",
-          company: "ABC Technologies",
-          period: "2020 – 2022",
-          desc: "Built responsive interfaces using React and Angular frameworks.",
+          role: "QA Engineer",
+          company: "NMS Software",
+          period: "2008 – 2015",
+          desc: "Focused on manual testing, FCAPS model verification, and automation scripting to ensure product quality and system stability",
         },
       ];
 
@@ -365,16 +410,16 @@
       // ---------- Education ----------
       const education = [
         {
-          degree: "B.Tech in Computer Science",
-          institution: "ABC University",
-          period: "2016 – 2020",
+          degree: "B.E in Computer Science & Engineering",
+          institution: "Anna University, Chennai, TN. INDIA",
+          period: "2007 – 2011",
           desc: "Graduated with distinction, focusing on software development and networking.",
         },
         {
-          degree: "Higher Secondary Education",
-          institution: "XYZ Matriculation School",
+          degree: "Diploma in Electronics & Communication Engineering",
+          institution: "Government Polytechnic . Aranthangi. TN , INDIA",
           period: "2014 – 2016",
-          desc: "Specialized in Computer Science with Mathematics.",
+          desc: "Specialized in Electronics & Communication.",
         },
       ];
 
